@@ -1,0 +1,239 @@
+:root {
+    --dark-mode: 0; /* 0 = light mode, 1 = dark mode */
+  }
+.numGroup{
+    /* display: grid; */
+    padding-top: 2em;
+    padding-right: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* grid-template-columns: repeat(3,1em); */
+    /* grid-template-rows: repeat(5,1em); */
+    /* row-gap: 2em; */
+}
+.row1,.row2,.row3,.row4{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1em); */
+    /* column-gap: 2em; */
+    display: flex;
+    justify-content: space-between;
+
+}
+button{
+    border-radius: 0.7em;
+    height: 3em;
+    font-size: larger;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px #7fc0fd ;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(27deg,#eff5fb,#cde6f7);
+
+    }
+.innerContainer{
+    min-width: 20rem;
+    min-height: 40rem;   
+    max-height: 40rem;
+    box-shadow: 0.1em 0.1em 1em #2294ff ;
+
+}
+button:hover{
+    background-image: none;
+    color: #cde6f7;
+    box-shadow: 0.1em 0.1em 1em #2294ff ;
+    background-color: #2190f8;
+}        
+
+.expButtons{
+    padding-top: 2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items:end ;
+    flex-direction: column;
+}
+.bigButton {
+    height: 5.5em;
+}
+.bigwButton {
+    width: 6.3em;
+}
+.userOutput::-webkit-scrollbar {
+  display: none;
+  /* overflow-y-hidden; */
+}
+.userOutput{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.userInput{
+    color: #2294ff;
+    font-size: larger;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.userInput::-webkit-scrollbar {
+  display: none;
+  /* overflow-y-hidden; */
+}
+
+.scorllable{
+    /* padding-top: 20em; */
+    /* padding-bottom: 5em; */
+}
+.scorllable::-webkit-scrollbar {
+    /* display: none; */
+    width: 0.5em;
+    height: 3em;
+    border-radius: 1em;
+    /* background-color: #2190f8; */
+    /* overflow-y-hidden; */
+  }
+.scorllable::-webkit-scrollbar-track {
+    /* display: none; */
+    /* width: 10px;
+    background-color: #2190f8;
+    border-radius: 1em; */
+
+    /* overflow-y-hidden; */
+  }
+.scorllable::-webkit-scrollbar-thumb {
+    /* display: none; */
+    /* width: 10px; */
+    background-color: #2190f8;
+    border-radius: 1em;
+
+    /* overflow-y-hidden; */
+  }
+.cards{
+    color: #cde6f7;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border-radius: 1em;
+}
+.history{
+    color: #cde6f7;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border-radius: 1em;
+}
+.darkFontValue{
+    color: #2d3037;
+}
+.cards {
+    align-self: center;
+    width: 14em;
+    height: 10em;
+    min-height: 6em;
+    background-color:#86c4f0;
+    transform: scale(0.8);
+    transition: transform 0.3s; /* add a smooth transition effect */
+  }
+.cardsDark{
+    background-color: #2d3037;
+}  
+  .unfocused {
+    transform: scale(0.8); /* scale down the unfocused cards */
+    opacity: 0.9; 
+    height: 10em;
+    width: 15em;
+  }
+  .cards:hover{
+    cursor: pointer;
+    background-color: #2190f8;
+    transform: scale(1); /* make the focused card fully opaque */
+
+
+  }
+  .focused {
+    transform: scale(1); /* keep the focused card at its original size */
+    opacity: 1;
+    background-color: #2190f8; /* make the focused card fully opaque */
+  }
+  
+  .oututStackMain {
+    /* add some padding to the container to make room for the focused card */
+    /* padding: 20px; */
+  }
+  .themeC{
+    border: 1px solid #2190f8 ;
+    height: 25px;
+    width: 50px;
+    position: absolute;
+    top: 0em;
+    /* border-start-end-radius: 50%; */
+    /* border-top-left-radius: 50%; */
+    /* border-top-right-radius: 50%; */
+    /* border-end-end-radius: 50%; */
+    /* border-radius: 0  50% 50%/0 0 0 100% 100%; */
+    border-radius: 25px;
+
+  }
+  .themeC:hover{
+    cursor: pointer;
+  }
+  .userInput{
+    height: 2em;
+  }
+
+  .darkButtonTheme {
+    /* background-image: linear-gradient(27deg, #333, #444); */
+    background-image: none;
+    background-color: #2d3037;
+    box-shadow: 1px 1px 1px #333;
+    color: #a0d7ff;
+  }
+
+  .oututStackMain{
+    min-width: 20rem;   
+    max-height: 40rem;
+    min-height: 40rem;
+  } 
+  @media (max-width: 768px ) and (min-width: 426px) {
+    /* styles for small screens */
+    .innerContainer{
+      min-width: 20rem;
+    }
+  }
+  /* @media (max-width: 700px ) and (min-width: 426px) { */
+  @media (max-width: 425px) {
+    /* styles for small screens */
+    .LeftC{
+        width: 100%;
+    }
+    .RightC{
+        width: 100%;
+    }
+    .innerContainer{
+      min-width: 20rem;
+      height: 18rem;
+    }
+    .numGroup {
+        padding-top: 0em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .expButtons  {
+        padding-top: 0em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .MainContainer{
+        padding: 1rem;
+        /* gap: 1rem; */
+        flex-direction: column;
+
+        align-items: center;
+        height: fit-content;
+        /* width: fit-content; */
+    }
+    .innerBound {
+        height: 100%;
+        width: 100%;
+    }
+  }
