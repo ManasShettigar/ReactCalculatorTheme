@@ -35,6 +35,7 @@ button{
     }
 .innerContainer{
     min-width: 20rem;
+    max-width: 20rem;
     min-height: 40rem;   
     max-height: 40rem;
     box-shadow: 0.1em 0.1em 1em #2294ff ;
@@ -193,8 +194,20 @@ button:hover{
     min-width: 20rem;   
     max-height: 40rem;
     min-height: 40rem;
-    overflow: scroll;
+    /* overflow: scroll; */
   } 
+  .oututStackMain::-webkit-scrollbar-thumb {
+    background-color: #2190f8;
+    border-radius: 1em;
+  } 
+  .oututStackMain::-webkit-scrollbar-track {
+    visibility: hidden;
+  } 
+  
+  .oututStackMain::-webkit-scrollbar-track-piece {
+    visibility: hidden;
+  } 
+  
   @media (max-width: 768px ) and (min-width: 426px) {
     /* styles for small screens */
     .innerContainer{
@@ -237,4 +250,8 @@ button:hover{
         height: 100%;
         width: 100%;
     }
+    .oututStackMain{
+        
+        overflow: scroll;
+      } 
   }
