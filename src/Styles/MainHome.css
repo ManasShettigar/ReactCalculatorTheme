@@ -193,6 +193,7 @@ button:hover{
     min-width: 20rem;   
     max-height: 40rem;
     min-height: 40rem;
+    overflow: scroll;
   } 
   @media (max-width: 768px ) and (min-width: 426px) {
     /* styles for small screens */
