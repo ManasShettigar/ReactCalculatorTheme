@@ -180,6 +180,7 @@ button:hover{
   }
   .userInput{
     height: 2em;
+    align-self: flex-end;
   }
 
   .darkButtonTheme {
@@ -239,7 +240,7 @@ button:hover{
     }
     .MainContainer{
         padding: 1rem;
-        /* gap: 1rem; */
+        gap: 5rem;
         flex-direction: column;
 
         align-items: center;
@@ -250,8 +251,17 @@ button:hover{
         height: 100%;
         width: 100%;
     }
+    .outputD{
+        /* gap: 3em; */
+    }
     .oututStackMain{
         
         overflow: scroll;
       } 
+      .scorllable {
+        align-self: flex-start;
+      }
+      .content {
+        /* align-self: flex-start; */
+      }
   }
